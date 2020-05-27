@@ -1,0 +1,34 @@
+package test04;
+
+/*
+ * 날짜 : 0000/00/00
+ * 이름 : 홍길동
+ * 내용 : 자바 연산자 연습문제 
+ */
+public class JavaTest4 {
+
+	public static void main(String[] args) {
+		
+		int x = 4;
+		int y = 2;
+		int z;
+		
+		z = x + y;
+		System.out.println("x + y = "+z);
+		
+		z = x - y;
+		System.out.println("x - y = "+z);
+		
+		z = x * y;
+		System.out.println("x * y = "+z);
+		
+		z = x / y;
+		System.out.println("x / y = "+z);
+		
+		z = (x + y) * (x - y);
+		System.out.println("(x + y) * (x - y) = "+z);
+		
+		z = (x * y) + (x / y);
+		System.out.println("(x * y) + (x / y) = "+z);
+	}
+}
