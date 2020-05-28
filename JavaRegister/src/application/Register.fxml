@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="283.0" minWidth="246.0" prefHeight="283.0" prefWidth="246.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.RegisterController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="128.0" text="직원등록">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" text="아이디" />
+      <TextField fx:id="txtUid" layoutX="73.0" layoutY="56.0" />
+      <Label layoutX="14.0" layoutY="93.0" text="이름" />
+      <TextField fx:id="txtName" layoutX="73.0" layoutY="89.0" />
+      <Label layoutX="14.0" layoutY="129.0" text="휴대폰" />
+      <TextField fx:id="txtHp" layoutX="73.0" layoutY="125.0" />
+      <Label layoutX="14.0" layoutY="165.0" text="직급" />
+      <ComboBox fx:id="combPos" layoutX="73.0" layoutY="161.0" prefHeight="23.0" prefWidth="138.0" />
+      <Label layoutX="14.0" layoutY="200.0" text="부서" />
+      <ComboBox fx:id="combDep" layoutX="73.0" layoutY="196.0" prefHeight="23.0" prefWidth="138.0" />
+      <Button fx:id="btnReg1" layoutX="118.0" layoutY="235.0" mnemonicParsing="false" text="등록1" />
+      <Button fx:id="btnCancel" layoutX="73.0" layoutY="235.0" mnemonicParsing="false" text="취소" />
+      <Button fx:id="btnReg2" layoutX="171.0" layoutY="235.0" mnemonicParsing="false" text="등록2" />
+   </children>
+</AnchorPane>
