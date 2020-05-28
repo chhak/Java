@@ -59,6 +59,16 @@ public class RegisterController implements Initializable {
 	}
 	
 	public void btnReg2Handler() {
-		System.out.println("reg2!!!");
+		String uid  = txtUid.getText();
+		String name = txtName.getText();
+		String hp   = txtHp.getText();
+		String pos  = combPos.getValue();
+		int    dep  = combDep.getValue();
+		
+		try {
+			DBProc.getInstance().insertUser2(uid, name, hp, pos, dep);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}	
 }
